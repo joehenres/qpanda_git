@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<script>
+
+
+
+
+
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+ if(dd<10){
+        dd='0'+dd
+    } 
+    if(mm<10){
+        mm='0'+mm
+    } 
+
+today = yyyy+'-'+mm+'-'+dd;
+document.getElementById("datefield").setAttribute("max", today);
+
+
+
+
+
+
+
+function getdate() {
+
+var date1=new Date();
+
+document.getElementById("start2").value = new Date()
+
+document.getElementById("start1").value=date1;
+
+}
+
+function onLoad() {
+ var y = document.getElementById("myDIV");
+ var z = document.getElementById("myDIV2");
+
+ var a = document.getElementById("myDIV3");
+ var b = document.getElementById("myDIV4");
+
+var c = document.getElementById("myDIV5");
+var d = document.getElementById("myDIV6");
+var e = document.getElementById("myDIV7");
+var f = document.getElementById("myDIV8");
+var g = document.getElementById("myDIV9");
+var h = document.getElementById("myDIV10");
+
+
+ y.style.display = "none";
+z.style.display = "none";
+ a.style.display = "none";
+b.style.display = "none";
+c.style.display = "none";
+d.style.display = "none";
+e.style.display = "none";
+f.style.display = "none";
+g.style.display = "none";
+h.style.display = "none";
+}
+
+
+
+
+function myFunction() {
+
+  var x = document.getElementById("mySelect").value;
+   var y = document.getElementById("myDIV");
+ var z = document.getElementById("myDIV2");
+var a = document.getElementById("myDIV3");
+var b = document.getElementById("myDIV4");
+var c = document.getElementById("myDIV5");
+var d = document.getElementById("myDIV6");
+var e = document.getElementById("myDIV7");
+var f = document.getElementById("myDIV8");
+var g = document.getElementById("myDIV9");
+var h = document.getElementById("myDIV10");
+
+  if (x === "Momentum") {
+	 y.style.display = "block";
+    z.style.display = "none";
+a.style.display = "none";
+b.style.display = "none";
+c.style.display = "none";
+d.style.display = "none";
+e.style.display = "none";
+f.style.display = "none";
+g.style.display = "none";
+h.style.display = "none";
+  } 
+
+
+
+else  if (x === "Valuation") {
+	 y.style.display = "none";
+    z.style.display = "block";
+a.style.display = "none";
+b.style.display = "none";
+c.style.display = "none";
+d.style.display = "none";
+e.style.display = "none";
+f.style.display = "none";
+g.style.display = "none";
+h.style.display = "none";
+  } 
+
+
+else  if (x === "Carry") {
+	 y.style.display = "none";
+    z.style.display = "none";
+a.style.display = "block";
+b.style.display = "none";
+c.style.display = "none";
+d.style.display = "none";
+e.style.display = "none";
+f.style.display = "none";
+g.style.display = "none";
+h.style.display = "none";
+  } 
+ 
+else  if (x === "CGF") {
+	 y.style.display = "none";
+    z.style.display = "none";
+a.style.display = "none";
+b.style.display = "block";
+c.style.display = "none";
+d.style.display = "none";
+e.style.display = "none";
+f.style.display = "none";
+g.style.display = "none";
+h.style.display = "none";
+  }
+
+else  if (x === "Is") {
+	 y.style.display = "none";
+    z.style.display = "none";
+a.style.display = "none";
+b.style.display = "none";
+c.style.display = "block";
+d.style.display = "none";
+e.style.display = "none";
+f.style.display = "none";
+g.style.display = "none";
+h.style.display = "none";
+  }
+
+else  if (x === "Ds") {
+	 y.style.display = "none";
+    z.style.display = "none";
+a.style.display = "none";
+b.style.display = "none";
+c.style.display = "none";
+d.style.display = "block";
+e.style.display = "none";
+f.style.display = "none";
+g.style.display = "none";
+h.style.display = "none";
+  }
+
+else  if (x === "Gmr") {
+	 y.style.display = "none";
+    z.style.display = "none";
+a.style.display = "none";
+b.style.display = "none";
+c.style.display = "none";
+d.style.display = "none";
+e.style.display = "block";
+f.style.display = "none";
+g.style.display = "none";
+h.style.display = "none";
+  }
+
+else  if (x === "Tot") {
+	 y.style.display = "none";
+    z.style.display = "none";
+a.style.display = "none";
+b.style.display = "none";
+c.style.display = "none";
+d.style.display = "none";
+e.style.display = "none";
+f.style.display = "block";
+g.style.display = "none";
+h.style.display = "none";
+  }
+
+else  if (x === "Lffv") {
+	 y.style.display = "none";
+    z.style.display = "none";
+a.style.display = "none";
+b.style.display = "none";
+c.style.display = "none";
+d.style.display = "none";
+e.style.display = "none";
+f.style.display = "none";
+g.style.display = "block";
+h.style.display = "none";
+  }
+	else {
+     y.style.display = "none";
+    z.style.display = "none";
+a.style.display = "none";
+b.style.display = "none";
+c.style.display = "none";
+d.style.display = "none";
+e.style.display = "none";
+f.style.display = "none";
+g.style.display = "none";
+h.style.display = "block";
+  }
+
+
+}
+
+ 
+
+
+</script>
+      
+<style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body  {
+
+
+  background-image: url("/static/images/toronto-skyline1.jpg");
+	
+
+	
+  
+
+height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: full;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+         label {
+    width:180px;
+    clear:left;
+    text-align:right;
+    padding-right:10px;
+}
+
+input, label {
+    float:left;
+}
+
+
+
+
+.custom1{
+
+width:33%;
+display:inline-block;
+float: left;
+clear:None;
+
+
+
+}
+
+
+.custom2{
+
+width:33%;
+display:inline-block;
+float: left;
+clear:None;
+
+
+}
+
+
+
+.custom3{
+
+width:14%;
+display:inline-block;
+float: left;
+clear:None;
+
+
+}
+
+
+.custom4{
+
+position:absolute;
+left: 0%; 
+margin-top:60%;
+
+}
+
+
+.custom5{
+
+width:14%;
+display:inline-block;
+float: left;
+clear:None;
+}
+
+
+.custom6{
+
+width:33%;
+display:inline-block;
+float: left;
+clear:None;
+margin-top:1.5%;
+
+}
+
+
+.custom7{
+
+width:2%;
+display:inline-block;
+float: left;
+clear:None;
+margin-top:1.5%;
+
+}
+
+</style>
+
+
+
+
+   </head>
+   
+	
+   <body onload="onLoad()">
+
+
+      <form method="post" action="/BacktestAnalysis">
+         
+	
+
+
+        
+
+
+
+	
+        <div class="custom1"> 
+
+
+        <p>Strategy list </p> 
+
+<select id="mySelect" onchange="myFunction()">
+
+<option enabled selected value> -- select an option -- </option>
+
+
+<option value="Momentum">Faber's Asset Allocation</option>
+<option value="Valuation">Adaptive Asset Allocation</option>
+<option value="Carry">Vigilant Asset Allocation</option>
+<option value="CGF">Elastic Asset Allocation Tactical Allocation </option>
+<option value="Is">Active Combined Asset Allocation </option>
+<option value="Ds">Dual Momentum Asset Allocation </option>
+<option value="Gmr">Paired Switching Asset Allocation </option>
+
+  
+</select>
+
+
+<div id="myDIV">
+<br> </br>
+         <label for="number">First leg N month returns</label> <br> </br>
+         <input type="number" name="fa1" value=1>  <br> </br>
+
+<label for="number">Second leg N month returns</label> <br> </br>
+         <input type="number" name="fa2" value=3>  <br> </br>
+
+<label for="number">Third leg N month returns</label> <br> </br>
+         <input type="number" name="fa3" value=6>  <br> </br>
+
+<label for="number">Fourth leg N month returns</label> <br> </br>
+         <input type="number" name="fa4" value=12>  <br> </br>
+
+<label for="number">Leverage</label> <br> </br>
+         <input type="number" name="la" value=1>  <br> </br>
+
+
+
+</div>
+
+
+<div id="myDIV2">
+         <label for="number"> N month returns for  the assets</label> <br> </br>
+         <input type="number" name="aa1" value=6>  <br> </br>
+
+
+<label for="number">Number of assets to hold</label> <br> </br>
+         <input type="number" name="aa2" value=5>  <br> </br>
+        
+</div>
+    
+
+
+
+<div id="myDIV3">
+
+
+
+         <label for="number">Number of assets to hold</label> <br> </br>
+         <input type="number" name="va" value=1>  <br> </br>
+         
+</div>
+
+
+<div id="myDIV4" name="cgf"> <br> </br>
+
+         <label for="number">Number of assets to hold</label> <br> </br>
+         <input type="number" name="ma" value=1>  <br> </br>
+
+
+
+
+
+
+
+         
+         
+</div>
+
+
+
+<div id="myDIV5" name="is1"> <br> </br>
+
+
+
+         <label for="number">Lower channel (Months)</label> <br> </br>
+         <input type="number" name="ma" value=6>  <br> </br>
+        
+
+         <label for="number">Upper channel (Months)</label> <br> </br>
+         <input type="number" name="ma" value=12>  <br> </br>       
+         
+</div>
+
+<div id="myDIV6" name="ds1"> <br> </br>
+
+<label for="number">N month returns</label> <br> </br>
+         <input type="number" name="ma" value=12>  <br> </br>
+         
+
+         
+</div>
+
+<div id="myDIV7" name="gmr"> <br> </br>
+
+<label for="number">N month returns</label> <br> </br>
+         <input type="number" name="ma" value=3>  <br> </br>
+
+         
+</div>
+
+
+
+
+
+
+
+         
+</div>
+        
+
+
+
+
+
+
+
+<div class="custom2">
+
+  <p>Rebalance period</p> 
+
+<select name="myDropDown2">
+  <option value='B'>1 Daily</option>
+  <option value='W-FRI'>2 Weekly</option>
+  <option value='BM'>3 Monthly</option>
+  <option value='BQ'>4 None </option>
+  
+</select>
+
+</div>
+
+
+
+
+
+
+
+<div class="custom6"> 
+
+        
+<label for="start">Range:</label>
+
+<input type="date" id="start" name="start"
+       min="2005-12-01" value="2005-12-01"> 
+
+
+
+
+<input type="date" id="start" name="end"
+       min="2005-12-01" value="2019-04-02"> 
+
+
+    
+
+
+</div>
+
+
+  
+
+         
+        
+        
+       
+        
+         
+
+ <div class="custom4">       
+
+
+ <input type="submit" value="Submit" name="ok"/>  
+
+
+</div>
+
+         
+      </form>
+
+
+ 
+   </body>
+
+
+	
+</html>
