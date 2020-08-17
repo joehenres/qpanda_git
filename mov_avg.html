@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>QuantPanda Documentation</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="..\static\images\favicon.ico">
+<style>
+    .data{
+        margin: 10px;
+    }
+    body{
+        padding-top: 32px;
+		overflow-x:hidden;
+    }
+</style>
+</head>
+
+<body>
+<div class="data">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:black;">
+        <a class="navbar-brand" href="#">
+        <img src="..\static\images\logo.jpg" alt="Logo" height="40">
+        </a>
+            <div class="navbar-nav ml-auto">
+			    <a href="#" class="nav-item nav-link">Home</a>
+                <a class="nav-item nav-link active">Documentation</a>
+                <a class="nav-item nav-link" href="{{ url_for('rb') }}">Backtest</a>
+				<a class="nav-item nav-link">StockOptionScreener</a>
+                <a class="nav-item nav-link" href="{{ url_for('resource') }}">Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Demo Content -->    
+    <div class="d-flex">
+	<div class="row">
+	<div class="col-sm-3 col-md-6 col-lg-4">
+	<nav class="nav flex-column">
+	    <br>
+		<a href="" class="list-group-item list-group-item-action bg-light"><h3>Technical Indicators</h3></a>
+		<a href="mov_avg.html" target="_top" id="side" class="list-group-item list-group-item-action bg-dark active"><b>Moving averages</b></a>
+        <a href="template2.html" target="content" id="side" class="list-group-item list-group-item-action bg-light"><b>Moving Average Crossover</b></a>
+        <a href="#" id="side" class="list-group-item list-group-item-action bg-light"><b>Moving Average Convergence Divergence</b></a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><b>Relative Strength Indicator</b></a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><b>Average Directional Indicator</b></a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><b>Stochastic Oscillator</b></a>
+		<a href="#" class="list-group-item list-group-item-action bg-light"><b>Average True Range</b></a>
+		<a href="#" class="list-group-item list-group-item-action bg-light"><b>Bollinger Bands</b></a>
+		<a href="#" class="list-group-item list-group-item-action bg-light"><b>Parabolic Support and Resistance</b></a>
+		<a href="#" class="list-group-item list-group-item-action bg-light"><b>Ichimoku</b></a>
+		<a href="#" class="list-group-item list-group-item-action bg-light"><b>Faber's Asset Allocation</b></a>
+		<a href="#" class="list-group-item list-group-item-action bg-light"><b>Adaptive Asset Allocation</b></a>
+		<a href="#" class="list-group-item list-group-item-action bg-light"><b>Vigilant Asset Allocation</b></a>
+		<a href="#" class="list-group-item list-group-item-action bg-light"><b>Elastic Asset Allocation Tactical Allocation</b></a>
+		<a href="#" class="list-group-item list-group-item-action bg-light"><b>Active Combined Asset Allocation</b></a>
+		<a href="#" class="list-group-item list-group-item-action bg-light"><b>Dual Momentum Asset Allocation</b></a>
+		<a href="#" class="list-group-item list-group-item-action bg-light"><b>Paired Switching Asset Allocation</b></a>
+    </nav>
+</div>
+<div class="col-sm-9 col-md-6 col-lg-8">
+<div class="main-container" id="div_displayfrom">
+ <div class="container-fluid">
+  <br><br><h1>What is Moving average(MA)?</h1>
+  <p>Moving Average(MA) is a stock indicator, used for technical analysis to compute the average price of security in a specific time frame.<br>
+     It is a simple method used to estimate the trend-cycle,suppport and resistance levels. Moving averages can be calculated for any time period, e.g. 15 minutes, 2 weeks or 7 years.Thus,it is suitable for trader as well as for investor. Though, they lag due to being based on historical price data but, they signifies the current direction. Despite this fact,they help to smooth out short-term fluctuations and highlight trends. Moreover,they are the foundation building blocks for other technical indicators like, Bollinger Band, MACD and the McClellan Oscillator. </p><br>
+  <h2> Types of Moving Averages </h2>
+  <ul>
+  <li> Simple Moving Average(SMA) </li>
+  <li> Weighted Moving Average(WMA) </li>
+  <li> Exponential Moving Average(EMA)</li>
+  </ul><br>
+  <p> Here, I am going to tell you everything you need to know about Simple Moving Averages.</p><br>	
+  <p> <h2> Simple Moving Average(SMA)</h2><hr>
+  A simple moving average is calculated by the average price of a stock over a certian number of periods.Most moving averages are based on the closing prices.
+  Sometimes,it can be calculated using other parameters such as open, high and low.</p><br><br>
+  <ul>
+  <li> Simple moving average is the most basic form of technical analysis and it is used to identify if the security is an uptrend or downtrend.</li>
+  <li> SMA's values are simple arithmatic means of previous price values. So, it works by smoothing out past price data.</li> 
+  <li> If there is no significant movement upward/downward then it means the price is ranging over the specific time period </li> 
+  <li> SMA is calculated using past closing prices. so, it is a lag indicator. The longer the time period of SMA, the greater the lag.</li>
+  <li> The Shorter the SMA, more signals you receive while trading.</li>
+  <li> The longer the SMA, the slower it reacts to the latest price movements.</li>
+  <li> 5 day,10day and 20 day SMA's are beneficial for short term traders, 30 day and 50 day SMAs are used by traders to gauge mid-term trends and 100 day and 200 day SMA's are useful for Long term trend followers.</li>
+  </ul></p> <br>
+  <p> <h2> Interpretation </h2><hr>
+  It is very simple to calculate the simple moving average.
+  The formula for calculating SMA is : <br> </p>	
+  <img src="..\static\images\formula_sma.png" alt="formula" style="width:300px;height:90px;"></img><br> <br>
+  <p> For instance, a five-day simple moving average is the five day sum of the closing prices 
+  divided by 5.</p><br>
+  <p>Let's take a look at an example of how to calculate simple moving average of a security with the given closing prices of 10 days.</p>
+  <br><br><img src="..\static\images\sma.png" alt="sma" style="width:700px;"></img><br><br><br>
+  <p> A 5-day moving average would average out the closing prices for the first 5 days as the first 5day-SMA.To calculate successive SMA's , a new value comes into the sum, and the
+  oldest value drops out and so on. As shown in the above example, the first SMA(data point) is calculated by taking average of closing prices of day 1 to day 5 then second data point is calculated by taking average of closing prices of day 2 to day 6 (by dropping the day1 closing price) and so on. Likewise, we can calculate the 50-day SMA or 200-day DMA depending upon the required timeframe.</p><br>
+  
+  <h2> Trade with Simple Moving Average </h2><hr>
+  <p> <b> Trading Analysis</b><br>
+  Traders and investors can assess the market sentiments by using SMA and determine wheather the price of the stock/security is trending up or down.If a stock is trading above its SMA then it is uptrend, while a stock trading below its SMA is considered as downtrend. For instance, if a stock is trading above its 30-day SMA, then it is in short-term uptrend. In contrast, if a stock is trading below its 200-day SMA, then it is in a long-term downtrend.</p><br>
+  
+  <p> <b> Price Crossover Strategy</b><br>
+  In this strategy, traders can take Buy/Call decision when the stock  price cross above or below the important SMA. Mostly short term traders use 10 day SMA to base their Buy/Sell decisions.In this case, one can buy if the stock price go above the 10 day moving average and sell if price drops below 10 day moving average.
+   </p>
+   <p> As daily prices contains noise, and sometimes this trading rule can lead to wrong trades.Although, this is quite useful tool but traders need to be careful especially in sideways market.</p> <br>
+   
+   <p> <b> Support and Resistance Strategy</b><br>
+   SMA's are quite useful in analyzing trend changes. They are used to identify Support and Resistance levels.<br>
+   Some traders use moving averages as support and resistance levels. Some combines various moving averages to confirm trend shifts and entry/exit point. A trader can take trade calls based on short term and Long term moving averages as they act as support and resistance levels and there is high probability that these levels hold.
+   So, buying stocks during the correction time is a good decision. Trader should wait for the consolidation in the support area while buying and can take a buy call when the price breaks out the high of that consolidation area.It indicates that the price is starting to move high above the support level.<br><br>
+   Similarly, trader can take short/sell call when the prices rises and touch the moving average. The same concept applies for selling at resistance levels. Trader should wait for the consolidation near the resistance area, then he can take a call for short trade when the price drops below the low of that small consolidation.<br>
+   <i>Always remember to place a stoploss below support while buying and above resistance while selling.</i></p><br>
+   
+   <p><b> Technical and Fundamental Analysis</b><br>
+   Simple moving average is a tool, which can be used for both technical and fundamental analysis.
+   Short-term traders use technical analysis for day trading and to predict the future price movements. For example, a short term trader can analyse the 20-day SMA to identify the trend wheather it is uptrend or downtrend.
+   Long-term investors usually analyze factors such as company's net-worth, revenue, profits and growth to determine the potential investments. For example, if an investor is intersted to buy an uptrend stock after a pull back to the 200-day SMA, then he can use the Simple Moving Average to find out how to calculate an attractive entry point.</p><br>
+    </div>
+	</div>
+	</div>
+</div>
+</div>
+</body>
+</html>

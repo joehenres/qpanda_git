@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>QuantPanda Documentation</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="..\static\images\favicon.ico">
+<style>
+    .data{
+        margin: 10px;
+    }
+    body{
+        padding-top: 32px;
+		overflow-x:hidden;
+    }
+</style>
+</head>
+
+<body>
+<div class="data">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:black;">
+        <a class="navbar-brand" href="#">
+        <img src="..\static\images\logo.jpg" alt="Logo" height="40">
+        </a>
+            <div class="navbar-nav ml-auto">
+			    <a href="#" class="nav-item nav-link">Home</a>
+                <a class="nav-item nav-link active">Documentation</a>
+                <a class="nav-item nav-link" href="{{ url_for('rb') }}">Backtest</a>
+				<a class="nav-item nav-link">StockOptionScreener</a>
+                <a class="nav-item nav-link" href="{{ url_for('resource') }}">Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Demo Content -->    
+    <div class="d-flex">
+	<div class="row">
+	<div class="col-sm-3 col-md-6 col-lg-4">
+	<nav class="nav flex-column">
+	    <br>
+		<a href="" class="list-group-item list-group-item-action bg-light"><h3>Technical Indicators</h3></a>
+		<a href="mov_avg.html" target="_top" id="side" class="list-group-item list-group-item-action bg-light"><b>Moving averages</b></a>
+        <a href="#" target="content" id="side" class="list-group-item list-group-item-action bg-light"><b>Moving Average Crossover</b></a>
+        <a href="#" id="side" class="list-group-item list-group-item-action bg-light"><b>Moving Average Convergence Divergence</b></a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><b>Relative Strength Indicator</b></a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><b>Average Directional Indicator</b></a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><b>Stochastic Oscillator</b></a>
+		<a href="#" class="list-group-item list-group-item-action bg-light"><b>Average True Range</b></a>
+		<a href="#" class="list-group-item list-group-item-action bg-light"><b>Bollinger Bands</b></a>
+		<a href="#" class="list-group-item list-group-item-action bg-light"><b>Parabolic Support and Resistance</b></a>
+		<a href="#" class="list-group-item list-group-item-action bg-light"><b>Ichimoku</b></a>
+		<a href="#" class="list-group-item list-group-item-action bg-light"><b>Faber's Asset Allocation</b></a>
+		<a href="#" class="list-group-item list-group-item-action bg-light"><b>Adaptive Asset Allocation</b></a>
+		<a href="#" class="list-group-item list-group-item-action bg-light"><b>Vigilant Asset Allocation</b></a>
+		<a href="#" class="list-group-item list-group-item-action bg-light"><b>Elastic Asset Allocation Tactical Allocation</b></a>
+		<a href="#" class="list-group-item list-group-item-action bg-light"><b>Active Combined Asset Allocation</b></a>
+		<a href="#" class="list-group-item list-group-item-action bg-light"><b>Dual Momentum Asset Allocation</b></a>
+		<a href="#" class="list-group-item list-group-item-action bg-light"><b>Paired Switching Asset Allocation</b></a>
+    </nav>
+</div>
+<div class="col-sm-9 col-md-6 col-lg-8">
+<div class="main-container" id="div_displayfrom">
+ <div class="container-fluid">
+  <br><br><h1>Technical Indicators</h1><hr>
+  <p>Technical indicator is a mathematical calculation which is based on the historic price, volume, and/or open interest of a stock/security and used by technical analysts/traders for technical analysis to predict probable future price movements. In technical analysis a stock's trading history is recorded by maintaining volumes traded and price changes in a chart and these technical indicators are additions to a chart that helps to predict the market trend.
+  <br>
+  <ul>
+  <li>Technical indicators are the interpreters of the stock market as they look at price information and translate it into easy to read signals that can help traders to determine when to buy and when to sell the stocks.</li>
+  <li>It helps the trader to identify the direction of future prices and alert the trader about the market trend.</li>
+  <li>Technical indicators are widely used by traders in the market as they are primarily designed for analysing short-term price movements.Thus, they are not quite useful for fundamental analysis like business earnings, revenue and profit margins.</li>
+  <li>Though, each technical indicator provides unique information but they look at historical price data. Therefore, they are not guaranteed to know anything definite about the future.</li>
+  </ul>
+  </p><br>
+  <h2>Categories of Technical Indicators</h2><hr>
+  <div class="row">
+    <div class="col">
+         <div class="card" style="width:200px">
+             <img class="card-img-top" src="..\static\images\lead.png" alt="Card image" height="100" title="It gives trade signal when the trend is about to start">
+             <div class="card-body">
+                 <h3 class="card-title">Leading</h3>
+            </div>
+         </div>
+    </div>
+	
+    <div class="col">
+         <div class="card" style="width:200px">
+             <img class="card-img-top" src="..\static\images\lagging_img.png" alt="Card image" height="100" title="it follows the price action">
+             <div class="card-body">
+                 <h3 class="card-title">Lagging</h3>
+             </div>
+        </div>
+    </div>
+  </div>
+  <ul><br>
+  <li>Leading Indicator - A Leading indicator is a tool to predict the future direction of market so that traders can predict market movements ahead of time. Theoretically, it gives the correct signal that a trader can get before the market movement. However, leading indicators are not 100% accurate, that is why they are always used in combination with other forms of technical analysis.</li><br>
+  <li>Lagging Indicator - A lagging indicator is a tool that gives a signal after the trend i.e., the price movement has already passed or reversal has started. Before entering into a trade, traders used lagging indicators to confirm the price trend.</li>
+  </ul>
+  <br>
+  <h3>Types of Technical Indicators</h3><hr>
+  <p><i>Indicators from LEADING and LAGGING categories belong to one of the following types:</i></p>
+  <ol>
+    <li>Trend Indicators</li>
+    <li>Momentum Indicators</li>
+    <li>Volatility Indicators</li>
+    <li>Volume Indicators</li>
+  </ol>
+  <p><h4>Trend Indicators</h4>
+  Trend indicators uses some form of price averaging to form a baseline and predicts the direction and strength of a trend. When the price moves above the average, it can be considered as a bullish trend. If the price moves below the average then it signals a bearish trend. These trend indicators are helpful as they help traders to trade in the same direction as the underlying trend and moreover,they also signals a change in trend which enables trader to enter a position right at the start of that new trend.<br>
+  Most widely used trend indicators are <i>Moving Averages(MA)</i> and <i>Moving Average Convergence Divergence(MACD)</i> which are lagging trend indicators and <i>Parabolic Stop and Reverse(Parabolic SAR)</i> is a leading trend indicator.</p><br>
+  <h4>Momentum Indicators</h4>
+  <p>Momentum indicators shows the movement of price over time and strength of the movement regardless of the direction of the price movement. It is  used by traders to identify the speed or rate at which the price of a stock changes. It is calculated by comparing the current closing price to previous closing prices. Typically, it appears as a line below price chart that oscillates as momentum changes. It can signal change in future prices, if there is a divergence between price movement and momentum.<br>
+  Most commonly used momentum indicators are <i>Stochastic Oscillator</i>, <i>Commodity Channel Index(CCI)</i> and <i>Relative Strength Index(RSI)</i> and they all are leading momentum indicators.<p><br>
+  <h4>Volatility Indicators</h4>
+  <p>Volatility indicators identifies the rate of price movement regardless of direction. It is based on the change in the highest and lowest historical prices. Volatility indicator helps the trader to measure the state of a market and to identify possible breakouts from a range bound market.<br>
+  Few examples of volatility indicators are <i>Bollinger Bands, Average True Range</i> and <i>Standard Deviation</i> and they all are lagging volatility indicators.</p><br>
+  <h4> Volume Indicators</h4>
+  <p>Volume indicators helps to identify the strength of a trend or confirm the trading direction based on some form of averaging or smoothing of raw volume. The strongest trends formed when volume increases and the trading volume increment is the key factor which can lead to large movements in price.<br>
+  Examples of volume indicators are <i>Chaikin Oscillator, On-Balance Volume(OBV)</i> which are leading Volume indicators and <i>Volume Rate of Change</i> is a lagging volume indicator.</p><br>  
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
