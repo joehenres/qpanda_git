@@ -124,8 +124,8 @@ $(document).ready(function(){
     </nav>
 <div class="container" style="padding-top:70px;">
   <form method="post" action="/BacktestAnalysis">
-    <div class="form-group row">
-      <div class="col-xs-3">
+    <div class="row">
+      <div class="col">
         <label for="ex2">Strategy List</label>
         <select class="form-control" id="stlist" style="width:260px">
 		     <option value="0">--Select an option--</option>
@@ -147,8 +147,8 @@ $(document).ready(function(){
 			 <option value="Ds">Dual Momentum Asset Allocation</option>
 			 <option value="Gmr">Paired Switching Asset Allocation</option>
         </select>
-      </div>
-	  <div class="col-xs-3">
+      </div><br>
+	  <div class="col">
         <label for="sel1">Rebalance Period</label>
         <select class="form-control" id="pList" style="width:150px">
              <option value='B'>Daily</option>
@@ -156,17 +156,17 @@ $(document).ready(function(){
              <option value='BM'>Monthly</option>
              <option value='BQ'>None</option>			 
         </select>
-      </div>
+      </div><br>
 	  
-	  <div class="col-xs-3">
+	  <div class="col">
         <label for="sel1">Portfolio Rebalancing</label>
         <select class="form-control" id="sel1" style="width:170px">
              <option>testdata</option>
              <option></option>
         </select>
-      </div>
+      </div><br>
       
-	  <div class="col-xs-3">
+	  <div class="col">
         <label for="sel1">Date Range</label>
 	    <input class="form-control" type="date" id="start" name="start"
           min="1940/02/27" value="2005-01-01">
